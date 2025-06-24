@@ -3,6 +3,8 @@
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
+	"author": "sametcn99",
+	"repository": "https://github.com/sametcn99/highcharts-v4-demo-test",
 	"scripts": {
 		"dev": "bunx --bun vite",
 		"build": "tsc -b && bunx --bun vite build",

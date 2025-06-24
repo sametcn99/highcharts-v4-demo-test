@@ -10,44 +10,71 @@ import SimpleMultipleChart from "./charts/SimpleMultipleChart";
 
 function App() {
 	return (
-		<>
-			<h1>Highcharts React v4 Demo</h1>
-
-			<div className="chart-grid">
-				<div>
-					<strong>SimpleMultipleChart.tsx</strong>
-					<SimpleMultipleChart />
+		<div className="app">
+			{/* Charts Demo Section */}
+			<section className="charts-section">
+				<div className="container">
+					<div className="chart-grid">
+						<div className="chart-item">
+							<div className="chart-header">
+								<h3>Simple Multiple Chart</h3>
+								<p>Chart with multiple series types</p>
+							</div>
+							<SimpleMultipleChart />
+						</div>
+						<div className="chart-item">
+							<div className="chart-header">
+								<h3>Combination Chart</h3>
+								<p>Mixed chart types in one visualization</p>
+							</div>
+							<CombinationChart />
+						</div>
+						<div className="chart-item">
+							<div className="chart-header">
+								<h3>Pie Chart</h3>
+								<p>Perfect for showing proportions</p>
+							</div>
+							<PieChart />
+						</div>
+						<div className="chart-item">
+							<div className="chart-header">
+								<h3>Scatter Chart</h3>
+								<p>Visualize correlations and patterns</p>
+							</div>
+							<ScatterChart />
+						</div>
+						<div className="chart-item">
+							<div className="chart-header">
+								<h3>Bar Chart</h3>
+								<p>Compare data across categories</p>
+							</div>
+							<BarChart />
+						</div>
+						<div className="chart-item">
+							<div className="chart-header">
+								<h3>Area Chart</h3>
+								<p>Show trends over time</p>
+							</div>
+							<AreaChart />
+						</div>
+						<div className="chart-item">
+							<div className="chart-header">
+								<h3>Column Chart</h3>
+								<p>Essential for data comparison</p>
+							</div>
+							<ColumnChart />
+						</div>
+						<div className="chart-item">
+							<div className="chart-header">
+								<h3>Advanced Options</h3>
+								<p>Customizable chart configurations</p>
+							</div>
+							<ChartWithOptions />
+						</div>
+					</div>
 				</div>
-				<div>
-					<strong>CombinationChart.tsx</strong>
-					<CombinationChart />
-				</div>
-				<div>
-					<strong>PieChart.tsx</strong>
-					<PieChart />
-				</div>
-				<div>
-					<strong>ScatterChart.tsx</strong>
-					<ScatterChart />
-				</div>
-				<div>
-					<strong>BarChart.tsx</strong>
-					<BarChart />
-				</div>
-				<div>
-					<strong>AreaChart.tsx</strong>
-					<AreaChart />
-				</div>
-				<div>
-					<strong>ColumnChart.tsx</strong>
-					<ColumnChart />
-				</div>
-				<div>
-					<strong>ChartWithOptions.tsx</strong>
-					<ChartWithOptions />
-				</div>
-			</div>
-		</>
+			</section>
+		</div>
 	);
 }
 
